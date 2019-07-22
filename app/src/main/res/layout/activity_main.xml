@@ -9,23 +9,29 @@
 
     <include layout="@layout/activity_toolbar"/>
 
-    <LinearLayout
-        android:id="@+id/top_layer"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/search_button"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/search_Edit"
+            android:hint="여행지를 검색해 보세요."
+            android:textColor="@color/textColorPrimary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
             android:drawableLeft="@drawable/ic_search"
             android:backgroundTint="@color/colorPrimary"
             android:drawableTint="@color/colorPrimary"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
 
 
     </LinearLayout>
