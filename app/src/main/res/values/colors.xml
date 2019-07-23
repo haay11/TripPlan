@@ -5,4 +5,5 @@
     <color name="colorAccent">#F877A5</color>
     <color name="windowBackground">#FAE1D9</color>
     <color name="textColorPrimary">#442C2E</color>
+    <color name="iconFillColor">#FF6E6E</color>
 </resources>

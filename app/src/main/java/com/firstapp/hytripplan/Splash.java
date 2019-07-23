@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 
 public class Splash extends AppCompatActivity {
-    private  int time = 3000;   //3초
+    private  int time = 4000;   //3초
     Intent intent;
 
     protected void onCreate(Bundle saveInstanceState){

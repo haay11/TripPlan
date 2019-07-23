@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/colorPrimary">
+
+    <include layout="@layout/activity_toolbar"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/cal_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_iconfinder_quiz_4595790"
+            android:layout_marginRight="30dp"
+            />
+        <EditText
+            android:text="날짜시작"
+            android:id="@+id/day_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            />
+        <EditText
+            android:text="날짜종료"
+            android:id="@+id/day_end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            />
+        <ImageButton
+            android:id="@+id/map_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_iconfinder_157_twitter_location_map_"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:text="추천 여행지">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

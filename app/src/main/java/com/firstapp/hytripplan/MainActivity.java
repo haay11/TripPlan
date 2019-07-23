@@ -1,17 +1,21 @@
 package com.firstapp.hytripplan;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.widget.Button;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity{
 
+    //객체 선언
+    Intent intent;
+    EditText search_edit;
+    ImageView add_image;
 
-    Image image;
     //툴바 객체 선언
     Toolbar toolbar;
     @Override
@@ -20,11 +24,27 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         //toolbar
         toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Trip Plan");
         setSupportActionBar(toolbar);
 
+        add_image = findViewById(R.id.add_image);
+        add_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(MainActivity.this, MakePlan.class);
+                startActivity(intent);
+            }
+        });
+        search_edit = findViewById(R.id.search_edit);
+        search_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(MainActivity.this, SearchSpace.class);
+                startActivity(intent);
+            }
+        });
 
-        image = findViewById(R.)
+
+
 
 
 
