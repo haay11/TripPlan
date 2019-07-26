@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity{
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //일정 추가
         add_image = findViewById(R.id.add_image);
         add_image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
+        //장소 검색
         search_edit = findViewById(R.id.search_edit);
         search_edit.setOnClickListener(new View.OnClickListener() {
             @Override

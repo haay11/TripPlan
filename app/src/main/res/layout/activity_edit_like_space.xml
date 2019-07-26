@@ -14,6 +14,7 @@
         android:layout_margin="10dp">
 
         <TextView
+            android:id="@+id/local_name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="지역 이름"
@@ -24,16 +25,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <CheckBox
+                android:id="@+id/space_check_box"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/space_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="장소"
                 android:textSize="20dp"
                 android:textColor="@color/textColorPrimary"/>
             <ImageView
+                android:id="@+id/space_add_img"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
