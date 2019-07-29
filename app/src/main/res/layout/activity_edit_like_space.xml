@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:text="지역 이름"
             android:textSize="23dp"
+            android:visibility="visible"
             android:textColor="@color/textColorPrimary"
             android:textStyle="bold"/>
         <LinearLayout
@@ -27,7 +28,8 @@
             <CheckBox
                 android:id="@+id/space_check_box"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
 
             <TextView
                 android:id="@+id/space_name_text"
@@ -35,13 +37,16 @@
                 android:layout_height="wrap_content"
                 android:text="장소"
                 android:textSize="20dp"
+                android:visibility="visible"
                 android:textColor="@color/textColorPrimary"/>
             <ImageView
                 android:id="@+id/space_add_img"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
-                android:src="@drawable/ic_icon_plus"/>
+                android:src="@drawable/ic_icon_plus"
+                android:visibility="visible"/>
+
         </LinearLayout>
     </LinearLayout>
 

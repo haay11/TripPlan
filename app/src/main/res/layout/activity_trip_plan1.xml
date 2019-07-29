@@ -17,7 +17,7 @@
         android:layout_marginVertical="@android:dimen/app_icon_size"
         android:gravity="center"
         >
-        <ImageButton
+        <ImageView
             android:id="@+id/cal_image"
             android:layout_width="70dp"
             android:layout_height="70dp"
@@ -38,7 +38,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="30dp"
             />
-        <ImageButton
+        <ImageView
             android:id="@+id/map_image"
             android:layout_width="70dp"
             android:layout_height="70dp"

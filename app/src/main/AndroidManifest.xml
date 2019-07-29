@@ -11,9 +11,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".MakePlan"></activity>
-        <activity android:name=".MakePlan2"></activity>
         <activity android:name=".SearchSpace"></activity>
         <activity android:name=".Space"></activity>
+        <activity android:name=".MainLogin" ></activity>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddLikeSpace" ></activity>
+
     </application>
 
 </manifest>
