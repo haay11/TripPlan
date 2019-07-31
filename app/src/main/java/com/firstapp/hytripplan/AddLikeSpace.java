@@ -16,6 +16,7 @@ public class AddLikeSpace extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_like_space);
         add_like_space_arr = findViewById(R.id.add_like_space_arr);
         add_like_space_name = findViewById(R.id.add_like_space_name);
         add_space_text1 = findViewById(R.id.add_space_text1);

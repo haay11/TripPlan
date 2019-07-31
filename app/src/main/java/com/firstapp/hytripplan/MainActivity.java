@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity{
         search_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intent = new Intent(MainActivity.this, SearchSpace.class);
+                intent = new Intent(MainActivity.this, SearchSpaceActivity.class);
                 startActivity(intent);
             }
         });

@@ -13,13 +13,13 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
+
 import java.util.ArrayList;
 
 
 
 
-public class SearchSpace extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class SearchSpaceActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     //객체 선언
     private ArrayList<String> space_name_list;
@@ -53,12 +53,10 @@ public class SearchSpace extends AppCompatActivity implements AdapterView.OnItem
         add_search_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(SearchSpace.this, Space.class);
-                Toast.makeText(getApplicationContext(), adapterView.getAdapter().getItem(i).toString(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SearchSpaceActivity.this, SpaceActivity.class);
                 intent.putExtra("key_name",space_name_list.get(i));
-
                 startActivity(intent);
-                finish();
+
 
             }
         });

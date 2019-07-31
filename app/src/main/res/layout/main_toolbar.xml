@@ -24,21 +24,37 @@
         />
 
     <ImageView
-        android:id="@+id/back_img"
-        android:layout_width="60dp"
-        android:layout_height="55dp"
-        android:foregroundGravity="left|center"
-        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
         android:layout_marginStart="14dp"
-        android:gravity="left|center"
-        android:src="@drawable/ic_icon_arrow_back" />
+        android:visibility="invisible"
+        android:src="@drawable/ic_icon_left_arrow" />
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:src="@drawable/ic_icon_arrow_forward"
-        android:layout_gravity="right"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginStart="14dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_icon_left_arrow1" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_icon_right_arrow"
+        android:layout_gravity="center_vertical|right"
+        android:visibility="invisible"
+        android:layout_marginEnd="14dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_icon_right_arrow1"
+        android:layout_gravity="center_vertical|right"
+        android:visibility="invisible"
+        android:layout_marginEnd="14dp"
         />
 
 </FrameLayout>
