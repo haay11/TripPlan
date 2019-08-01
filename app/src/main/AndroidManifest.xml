@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".MakePlan"></activity>
+        <activity android:name=".MakePlanActivity"></activity>
         <activity android:name=".SearchSpaceActivity"></activity>
         <activity android:name=".SpaceActivity"></activity>
         <activity android:name=".MainLoginActivity" ></activity>

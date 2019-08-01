@@ -22,10 +22,10 @@ import java.util.ArrayList;
 public class SearchSpaceActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     //객체 선언
-    private ArrayList<String> space_name_list;
-    private ArrayList<Integer> list;
-    private ListView add_search_list;
-    private EditText add_search_edit;
+    private ArrayList<String> spaceNameList;
+    private ArrayList<Integer> cityList;
+    private ListView addSearchList;
+    private EditText addSearchEdit;
     private ArrayAdapter<String> adapter;
 
     @Override
@@ -33,13 +33,13 @@ public class SearchSpaceActivity extends AppCompatActivity implements AdapterVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_space);
 
-       add_search_edit = findViewById(R.id.add_search_edit);
-       add_search_list = findViewById(R.id.add_search_list);
+       addSearchEdit = findViewById(R.id.add_search_edit);
+       addSearchList = findViewById(R.id.add_search_list);
 
 
 
         //리스트 생성;
-        space_name_list = new ArrayList<String>();
+        spaceNameList = new ArrayList<String>();
 
         //리스트에 검색할 데이터 추가
         setSpaceNameList();
@@ -48,19 +48,18 @@ public class SearchSpaceActivity extends AppCompatActivity implements AdapterVie
         final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.add_search_edit);
 
         //adapter연결
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, space_name_list);
-        add_search_list.setAdapter(adapter);
-        add_search_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, spaceNameList);
+        addSearchList.setAdapter(adapter);
+        addSearchList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(SearchSpaceActivity.this, SpaceActivity.class);
-                intent.putExtra("key_name",space_name_list.get(i));
+                intent.putExtra("key_name",spaceNameList.get(i));
                 startActivity(intent);
-
-
             }
         });
-        add_search_edit.addTextChangedListener(new TextWatcher() {
+
+        addSearchEdit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -84,11 +83,11 @@ public class SearchSpaceActivity extends AppCompatActivity implements AdapterVie
 
 
     private void setSpaceNameList(){
-        space_name_list.add("파리");
-        space_name_list.add("로마");
-        space_name_list.add("시에나");
-        space_name_list.add("서울");
-        space_name_list.add("니스");
+        spaceNameList.add(getString(R.string.paris));
+        spaceNameList.add("로마");
+        spaceNameList.add("시에나");
+        spaceNameList.add("서울");
+        spaceNameList.add("니스");
     }
 
 

@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 
 public class SplashActivity extends AppCompatActivity {
-    private  int time = 4000;   //3초
+    private  int time = 4000;   //4초
     Intent intent;
 
     protected void onCreate(Bundle saveInstanceState){
@@ -26,5 +26,5 @@ public class SplashActivity extends AppCompatActivity {
 
     }
 
-    }
+}
 
