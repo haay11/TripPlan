@@ -8,22 +8,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:tools="http://schemas.android.com/tools"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".MakePlanActivity"></activity>
-        <activity android:name=".SearchSpaceActivity"></activity>
-        <activity android:name=".SpaceActivity"></activity>
-        <activity android:name=".MainLoginActivity" ></activity>
+
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddLikeSpace" ></activity>
-
+        <activity android:name=".AddLikeSpace" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".MakePlanActivity"/>
+        <activity android:name=".SearchSpaceActivity"/>
+        <activity android:name=".SpaceActivity"/>
+        <activity android:name=".MainLoginActivity"/>
+        <activity android:name=".LoginActivity"/>
     </application>
 
 </manifest>

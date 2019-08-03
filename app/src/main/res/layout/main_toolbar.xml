@@ -24,6 +24,7 @@
         />
 
     <ImageView
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="left|center_vertical"
@@ -32,6 +33,7 @@
         android:src="@drawable/ic_icon_left_arrow" />
 
     <ImageView
+        android:id="@+id/back_empty"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="left|center_vertical"
@@ -40,6 +42,7 @@
         android:src="@drawable/ic_icon_left_arrow1" />
 
     <ImageView
+        android:id="@+id/forward"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:src="@drawable/ic_icon_right_arrow"
@@ -49,6 +52,7 @@
         />
 
     <ImageView
+        android:id="@+id/forward_empty"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:src="@drawable/ic_icon_right_arrow1"
