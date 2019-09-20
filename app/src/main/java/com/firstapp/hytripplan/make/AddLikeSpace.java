@@ -1,10 +1,16 @@
-package com.firstapp.hytripplan;
+package com.firstapp.hytripplan.make;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.firstapp.hytripplan.R;
+import com.firstapp.hytripplan.search.SearchSpaceActivity;
 
 public class AddLikeSpace extends AppCompatActivity {
 
@@ -21,6 +27,14 @@ public class AddLikeSpace extends AppCompatActivity {
         addSpaceText1 = findViewById(R.id.add_space_text1);
         addSpaceImg = findViewById(R.id.space_img);
 
+
+        addSpaceImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddLikeSpace.this, SearchSpaceActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

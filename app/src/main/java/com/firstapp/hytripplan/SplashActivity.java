@@ -3,7 +3,10 @@ package com.firstapp.hytripplan;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.firstapp.hytripplan.login.LoginActivity;
 
 
 public class SplashActivity extends AppCompatActivity {

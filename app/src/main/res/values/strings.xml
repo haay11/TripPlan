@@ -1,4 +1,28 @@
 <resources>
     <string name="app_name">TripPlan</string>
     <string name="paris">paris</string>
+    <string name="no_data">No data entered</string>
+    <string name="space">space</string>
+    <string name="area">area</string>
+    <string name="input_id">Please, input your ID.</string>
+    <string name="input_pw">Please, input your password.</string>
+    <string name="login">LogIn</string>\
+    <string name="google_login">Start to Google!</string>
+    <string name="find_id_pw">Find ID/PW</string>
+    <string name="sign_up_member">Sign up as a member</string>
+    <string name="search_word">Please, input your search word.</string>
+    <string name="input_plan_name">Please, input your plan name!</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="save">SAVE</string>
+    <string name="search_space">Search the trip destination.</string>
+    <string name="no_area">No trip has been saved yet. \n Try adding travel.</string>
+    <string name="plan_name">Trip Name</string>
+    <string name="period">period</string>
+    <string name="change_schedule">Change of schedule</string>
+    <string name="day">Day</string>
+    <string name="material">Material</string>
+    <string name="edit">EDIT</string>
+    <string name="my_packing">MY PACKING</string>
+    <string name="add">ADD</string>
 </resources>

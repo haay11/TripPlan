@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <include layout="@layout/activity_toolbar"/>
+    <com.firstapp.hytripplan.CustomToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
         <LinearLayout
             android:id="@+id/add_space_lin"
@@ -17,7 +22,7 @@
                 android:id="@+id/add_like_space_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="지역 이름"
+                android:text="@string/area"
                 android:textSize="23dp"
                 android:visibility="visible"
                 android:textColor="@color/textColorPrimary"
@@ -38,7 +43,7 @@
                  android:id="@+id/add_space_text1"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:text="장소"
+                 android:text="@string/space"
                  android:textSize="20dp"
                  android:visibility="visible"
                  android:textColor="@color/textColorPrimary"/>
